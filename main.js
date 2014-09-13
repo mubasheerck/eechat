@@ -1,5 +1,12 @@
-function showwifi(){
-var wifi = navigator.mozWifiManager;
+/*
+ * Auto-generated content from the Brackets New Project extension.  Enjoy!
+ */
+// Refer to UI elements
+var button = document.getElementById('search');
+var txtInput = 'gfgf';
+// Bind click event of the button with an event listener
+button.addEventListener('click', function(){
+    var wifi = navigator.mozWifiManager;
 
 function sortNetworksByStrength(a, b) {
   return a.signalStrength > b.signalStrength ? -1 : 1;
@@ -20,4 +27,5 @@ request.onsuccess = function () {
 request.onerror = function (err) {
   console.log('Something goes wrong: ' + err);
 }
-}
+    //alert(text);
+});
